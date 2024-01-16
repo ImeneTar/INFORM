@@ -9,3 +9,17 @@ INFORM is a framework that scalably learns robust policies and reward functions 
 <p align="center">
   <img src="INFORM-1.png" alt="Descriptive Alt Text" width="600" height="200"/>
 </p>
+
+# Getting started
+###### Prerequisites:
+- Python >= 3.7.1, <3.11
+
+Download and access to the code locally:
+```bash
+$ git clone https://github.com/ImeneTar/INFORM.git
+$ cd INFORM
+```
+Install requirements:
+```bash
+$ pip install -r requirements/requirements.txt
+$ pip install -r requirements/requirements-mujoco.txt
