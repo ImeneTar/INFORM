@@ -38,7 +38,7 @@ $ python3 sac_inform.py
 ```
 # Evaluating the robustness of the policy
 To assess the robustness of the framework, we perturbed the dynamics of Pusher-V4 by addind an obstacle along the optimal way. Here are the steps to modify the environment similarly:
-1. Download the source code of Gymnaisium-0.28.1 locally : [Link Text]([URL](https://github.com/Farama-Foundation/Gymnasium/releases/tag/v0.28.1)https://github.com/Farama-Foundation/Gymnasium/releases/tag/v0.28.1)
+1. Download the source code of Gymnaisium-0.28.1 locally : [Source code](https://github.com/Farama-Foundation/Gymnasium/releases/tag/v0.28.1)https://github.com/Farama-Foundation/Gymnasium/releases/tag/v0.28.1)
 
 2. Modify the files:
 Copy the file located at "Modified Gymnasium/pusher_v4_obstacle.py" to "Gymnaisium-0.28.1/gymnasium/envs/mujoco/"
@@ -62,6 +62,19 @@ To evaluate the agent on this environment:
 $ python3 test_tamer_push.py
 $ python3 test_inform_push.py
 ```
+
+# Evaluating the reward function
+To assess the effectiveness of the reward function, run the following:
+```bash
+$ python3 train_ql_env.py
+$ python3 train_ql_infer.py
+```
+
+
+# Figures 
+All figures and animations can be reproduced by runining the jupyter notebooks:
+[Gridworld](plot_grid.ipynb)
+[Pusher](plot_pusher.ipynb)
 
 
 
