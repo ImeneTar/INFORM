@@ -77,7 +77,7 @@ All figures and animations can be reproduced by runining the jupyter notebooks:
 [Pusher](plot_pusher.ipynb)
 
 
-#Questions
+# Questions
 If you have any questions or comments, please contact us:
 Imene Tarakli ([i.tarakli@shu.ac.uk](mailto:i.tarakli@shu.ac.uk))
 
