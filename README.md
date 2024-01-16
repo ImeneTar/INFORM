@@ -57,4 +57,12 @@ register(
 $ cd Gymnasium-0.28.1/
 $ pip install -e .
 ```
+To evaluate the agent on this environment:
+```bash
+$ python3 test_tamer_push.py
+$ python3 test_inform_push.py
+```
+
+
+
 
