@@ -23,3 +23,38 @@ Install requirements:
 ```bash
 $ pip install -r requirements/requirements.txt
 $ pip install -r requirements/requirements-mujoco.txt
+```
+
+# Training an agent
+To train an agent on Gridwolrd with DQN, run the following command lines:
+```bash
+$ python3 dqn_tamer.py
+$ python3 dqn_inform.py
+```
+To train an agent on Pusher-v4 with SAC, run the following command lines:
+```bash
+$ python3 sac_tamer.py
+$ python3 sac_inform.py
+```
+# Evaluating the robustness of the policy
+To assess the robustness of the framework, we perturbed the dynamics of Pusher-V4 by addind an obstacle along the optimal way. Here are the steps to modify the environment similarly:
+1. Download the source code of Gymnaisium-0.28.1 locally : [Link Text]([URL](https://github.com/Farama-Foundation/Gymnasium/releases/tag/v0.28.1)https://github.com/Farama-Foundation/Gymnasium/releases/tag/v0.28.1)
+
+2. Modify the files:
+Copy the file located at "Modified Gymnasium/pusher_v4_obstacle.py" to "Gymnaisium-0.28.1/gymnasium/envs/mujoco/"
+Copy the file located at "Modified Gymnasium/assets/pusher_obstacle.xml" to "Gymnaisium-0.28.1/gymnasium/envs/mujoco/assets/"
+In "Gymnaisium-0.28.1/gymnasium/envs/__init__.py", add the following lines:
+```python
+register(
+    id="Pusher-v4-obstacle",
+    entry_point="gymnasium.envs.mujoco.pusher_v4_obstacle:PusherEnv",
+    max_episode_steps=100,
+    reward_threshold=0.0,
+)
+```
+3. Install the modifed Gymnasium:
+```bash
+$ cd Gymnasium-0.28.1/
+$ pip install -e .
+```
+
