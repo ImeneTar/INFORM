@@ -11,7 +11,7 @@ INFORM is a framework that scalably learns robust policies and reward functions 
 </p>
 
 # Getting started
-###### Prerequisites:
+### Prerequisites:
 - Python >= 3.7.1, <3.11
 
 Download and access to the code locally:
