@@ -1,4 +1,9 @@
-# docs and experiment results can be found at https://docs.cleanrl.dev/rl-algorithms/sac/#sac_continuous_actionpy
+"""
+Copyright (c) 2024 ImeneTar
+
+Code adapted from https://docs.cleanrl.dev/rl-algorithms/sac/#sac_continuous_actionpy
+
+"""
 import os
 import random
 import time
